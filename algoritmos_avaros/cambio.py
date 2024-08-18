@@ -27,4 +27,22 @@
 
 cambio = {}
 
-print(len(cambio))
+# print(len(cambio))
+
+# Initialize the key with an empty list if it does not exist
+if 100 not in cambio:
+    cambio[100] = []
+
+# Now you can safely append to the list
+
+
+cambio[100].append([2,3])
+cambio[100].append(3)
+
+if 150 not in cambio:
+    cambio[150] = []
+    
+cambio[150].append(4)
+cambio[150].append(5)
+
+print(cambio[100], cambio[150])  # Output should be [2]
