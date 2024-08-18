@@ -1,0 +1,30 @@
+# def min_pesos(v, denominations):
+#     # Ordenar las denominaciones de mayor a menor
+#     denominations.sort(reverse=True)
+#     # Contador para el número total de monedas/billetes
+#     count = 0
+#     # Lista para guardar las monedas/billetes utilizados
+#     pesos_usados = []
+#     for pesos in denominations:
+#         if v >= pesos:
+#             num_pesos = v // pesos # Número de monedas/billetes de esta denominación
+#             count += num_pesos
+#             v -= num_pesos * pesos
+#             pesos_usados.append((pesos, num_pesos))
+#     return count, pesos_usados
+
+
+# denominaciones = [1000, 500, 100, 50, 20, 10, 5, 2, 1]
+
+# v = 2893
+
+# total_pesos, pesos_usados = min_pesos(v, denominaciones)
+
+# print(f"Número mínimo de monedas/billetes necesarios: {total_pesos}")
+# print("Monedas/Billetes usados:")
+# for pesos, count in pesos_usados: print(f"{count} x {pesos} Rs")
+
+
+cambio = {}
+
+print(len(cambio))
