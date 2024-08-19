@@ -1,7 +1,6 @@
 from math import inf
 
-# Codigo sacado de https://www.google.com/search?q=find+int+key+python+dictionary&client=firefox-b-d&sca_esv=bdb381700418c9a0&sxsrf=ADLYWIK5ORhoPn9whVmEo63l746fvalRbA%3A1724012693951&ei=lVjCZu_XOeLbkPIP6fuGOQ&ved=0ahUKEwiv9tfhr_-HAxXiLUQIHem9IQcQ4dUDCA8&uact=5&oq=find+int+key+python+dictionary&gs_lp=Egxnd3Mtd2l6LXNlcnAiHmZpbmQgaW50IGtleSBweXRob24gZGljdGlvbmFyeTIIECEYoAEYwwRI4xFQtQtYpRBwAXgBkAEAmAHxAaAB0gSqAQUwLjMuMbgBA8gBAPgBAZgCBKAC5gPCAgoQABiwAxjWBBhHwgIIEAAYBxgIGB6YAwCIBgGQBgiSBwUxLjIuMaAHiBg&sclient=gws-wiz-serp
-
+# Codigo sacado de https://stackoverflow.com/questions/47725773/finding-an-integer-key-of-a-python-dict-that-is-closest-to-a-given-integer
 class RangeMap:
     def __init__(self, dictionary, minimum=-inf, maximum=inf):
         assert dictionary

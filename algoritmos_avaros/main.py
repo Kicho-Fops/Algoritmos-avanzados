@@ -47,6 +47,7 @@ def min_pesos(total, denominations, cambio):
             total -= num_pesos * pesos
             pesos_usados.append((pesos, num_pesos))
             
+            
     
     # Guardamos el resultado en el diccionario 'cambio'
     agregarALista(totalIntacto, count, pesos_usados)
@@ -54,14 +55,14 @@ def min_pesos(total, denominations, cambio):
 
 def agregarALista(total, count, pesos_usados):
     
-    #print(total)
+  
 
     if total not in cambio: # No me gusta que total no sea explicito :p
         cambio[total] = []
     
     for pesos, count in pesos_usados:
         cambio[total].append([pesos, count])
-    #print(cambio[total])
+ 
 
 def checkDenomination(billete, denominaciones):
     if billete in denominaciones:
